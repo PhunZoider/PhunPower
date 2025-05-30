@@ -1,0 +1,67 @@
+{
+    "emeraldwalk.runonsave": {
+        "autoClearConsole": true,
+        "commands": [
+            {
+                "match": ".*",
+                "cmd": "rmdir /S /Q ${env.USERPROFILE}\\Zomboid\\mods\\PhunVent\\media 2>nul"
+            },
+            {
+                "match": ".*",
+                "cmd": "rmdir /S /Q ${env.USERPROFILE}\\Zomboid\\mods\\PhunVent\\42 2>nul"
+            },
+            {
+                "match": ".*",
+                "cmd": "xcopy ${workspaceFolder}\\Contents\\mods ${env.USERPROFILE}\\Zomboid\\mods /Y /I /E /F /EXCLUDE:xclude"
+            },
+            {
+                "match": ".*",
+                "cmd": "xcopy ${workspaceFolder}\\Contents\\mods\\PhunVent\\media ${env.USERPROFILE}\\Zomboid\\mods\\PhunVent\\42\\media /Y /I /E /F"
+            },
+            {
+                "match": ".*",
+                "cmd": "copy ${workspaceFolder}\\Contents\\mods\\PhunVent\\mod.info ${env.USERPROFILE}\\Zomboid\\mods\\PhunVent\\42\\mod.info /Y"
+            },
+            {
+                "match": ".*",
+                "cmd": "del ${env.USERPROFILE}\\Zomboid\\mods\\PhunVent\\42\\media\\lua\\shared\\PhunVent\\data.lua"
+            },
+            {
+                "match": ".*",
+                "cmd": "copy ${workspaceFolder}\\Contents\\mods\\PhunVent\\42\\mod.info ${env.USERPROFILE}\\Zomboid\\mods\\PhunVent\\42\\mod.info /Y"
+            },
+            {
+                "match": ".*",
+                "cmd": "copy ${workspaceFolder}\\Contents\\mods\\PhunVent\\poster.png ${env.USERPROFILE}\\Zomboid\\mods\\PhunVent\\42\\poster.png /Y"
+            },            
+            {
+                "match": ".*",
+                "cmd": "copy ${workspaceFolder}\\Contents\\mods\\PhunVent\\icon.png ${env.USERPROFILE}\\Zomboid\\mods\\PhunVent\\42\\icon.png /Y"
+            },
+            {
+                "match": ".*",
+                "cmd": "rmdir /S /Q ${env.USERPROFILE}\\Zomboid\\Workshop\\PhunVent 2>nul"
+            },
+            {
+                "match": ".*",
+                "cmd": "xcopy ${workspaceFolder} ${env.USERPROFILE}\\Zomboid\\Workshop\\PhunVent /Y /I /E /F /EXCLUDE:xclude"
+            },
+            {
+                "match": ".*",
+                "cmd": "xcopy ${env.USERPROFILE}\\Zomboid\\mods\\PhunVent ${env.USERPROFILE}\\Zomboid\\Workshop\\PhunVent\\Contents\\mods\\PhunVent /Y /I /E /F"
+            },
+            {
+                "match": ".*",
+                "cmd": "rmdir /S /Q ${env.USERPROFILE}\\pz41\\mods\\PhunVent 2>nul"
+            },
+            {
+                "match": ".*",
+                "cmd": "xcopy ${env.USERPROFILE}\\Zomboid\\mods\\PhunVent ${env.USERPROFILE}\\pz41\\mods\\PhunVent /Y /I /E /F /EXCLUDE:xclude"
+            },
+                                              
+        ]
+    },
+    "editor.formatOnSave": true,
+    "github.gitAuthentication": true,
+    "github.gitProtocol": "ssh"
+}

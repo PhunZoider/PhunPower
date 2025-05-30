@@ -1,0 +1,9 @@
+name=PhunVent
+id=phunvent
+author=UburGeek
+description=Vent traversal
+poster=poster.png
+require=phunlib
+icon=icon.png
+pack=phunvent
+tiledef=phunvent 1532
