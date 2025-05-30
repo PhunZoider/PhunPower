@@ -1,0 +1,7 @@
+name=PhunPower
+id=phunpower
+author=UburGeek
+description=Restore Utilities
+poster=poster.png
+require=\phunlib
+icon=icon.png

@@ -1,0 +1,67 @@
+{
+    "emeraldwalk.runonsave": {
+        "autoClearConsole": true,
+        "commands": [
+            {
+                "match": ".*",
+                "cmd": "rmdir /S /Q ${env.USERPROFILE}\\Zomboid\\mods\\PhunPower\\media 2>nul"
+            },
+            {
+                "match": ".*",
+                "cmd": "rmdir /S /Q ${env.USERPROFILE}\\Zomboid\\mods\\PhunPower\\42 2>nul"
+            },
+            {
+                "match": ".*",
+                "cmd": "xcopy ${workspaceFolder}\\Contents\\mods ${env.USERPROFILE}\\Zomboid\\mods /Y /I /E /F /EXCLUDE:xclude"
+            },
+            {
+                "match": ".*",
+                "cmd": "xcopy ${workspaceFolder}\\Contents\\mods\\PhunPower\\media ${env.USERPROFILE}\\Zomboid\\mods\\PhunPower\\42\\media /Y /I /E /F"
+            },
+            {
+                "match": ".*",
+                "cmd": "copy ${workspaceFolder}\\Contents\\mods\\PhunPower\\mod.info ${env.USERPROFILE}\\Zomboid\\mods\\PhunPower\\42\\mod.info /Y"
+            },
+            {
+                "match": ".*",
+                "cmd": "del ${env.USERPROFILE}\\Zomboid\\mods\\PhunPower\\42\\media\\lua\\shared\\PhunPower\\data.lua"
+            },
+            {
+                "match": ".*",
+                "cmd": "copy ${workspaceFolder}\\Contents\\mods\\PhunPower\\42\\mod.info ${env.USERPROFILE}\\Zomboid\\mods\\PhunPower\\42\\mod.info /Y"
+            },
+            {
+                "match": ".*",
+                "cmd": "copy ${workspaceFolder}\\Contents\\mods\\PhunPower\\poster.png ${env.USERPROFILE}\\Zomboid\\mods\\PhunPower\\42\\poster.png /Y"
+            },            
+            {
+                "match": ".*",
+                "cmd": "copy ${workspaceFolder}\\Contents\\mods\\PhunPower\\icon.png ${env.USERPROFILE}\\Zomboid\\mods\\PhunPower\\42\\icon.png /Y"
+            },
+            {
+                "match": ".*",
+                "cmd": "rmdir /S /Q ${env.USERPROFILE}\\Zomboid\\Workshop\\PhunPower 2>nul"
+            },
+            {
+                "match": ".*",
+                "cmd": "xcopy ${workspaceFolder} ${env.USERPROFILE}\\Zomboid\\Workshop\\PhunPower /Y /I /E /F /EXCLUDE:xclude"
+            },
+            {
+                "match": ".*",
+                "cmd": "xcopy ${env.USERPROFILE}\\Zomboid\\mods\\PhunPower ${env.USERPROFILE}\\Zomboid\\Workshop\\PhunPower\\Contents\\mods\\PhunPower /Y /I /E /F"
+            },
+            {
+                "match": ".*",
+                "cmd": "rmdir /S /Q ${env.USERPROFILE}\\pz41\\mods\\PhunPower 2>nul"
+            },
+            {
+                "match": ".*",
+                "cmd": "xcopy ${env.USERPROFILE}\\Zomboid\\mods\\PhunPower ${env.USERPROFILE}\\pz41\\mods\\PhunPower /Y /I /E /F /EXCLUDE:xclude"
+            },
+                                              
+        ]
+    },
+    "editor.formatOnSave": true,
+    "github.gitAuthentication": true,
+    "github.gitProtocol": "ssh"
+}

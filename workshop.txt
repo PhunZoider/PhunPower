@@ -1,0 +1,12 @@
+version=1
+title=PhunPower
+description=B41/B42 mod for restoring utilities
+description=
+description=
+description=See [url=https://github.com/PhunZoider/PhunPower]Github Repo[/url] for info on customising or extending
+
+description=[url=https://discord.gg/v2USyAtP6q][img]https://i.imgur.com/q2rnXYZ.png[/img][/url]
+description=Coded with love for our awesome [url=https://discord.gg/v2USyAtP6q]PhunZoid[/url] community. [url=https://github.com/PhunZoider/PhunTime]Repo and more info[/url]
+require=phunlib
+tags=Build 41;Build 42;Multiplayer
+visibility=hidden
